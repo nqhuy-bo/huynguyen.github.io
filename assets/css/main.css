@@ -1,0 +1,2082 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: HK Grotesk;
+    src: url("../fonts/HKGrotesk-Medium.woff") format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: HK Grotesk;
+    src: url("../fonts/HKGrotesk-SemiBold.woff") format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: HK Grotesk;
+    src: url("../fonts/HKGrotesk-Bold.woff") format('woff');
+    font-weight: 700;
+}
+html{
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+body {
+    margin: 0px auto;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4, h5,h6{
+    margin: 0px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+button:focus, input:focus, select:focus, textarea:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+img{
+    width:100%;
+    display:block;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+a, button{
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+._toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+._toggler.collapsed .navbar-toggler-icon {
+    background-image: url("../img/header-r8-menu-ic.svg") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 22px;
+}
+._toggler .navbar-toggler-icon {
+    background-image: url("../img/header-r8-menu-cross.svg") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 22px;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+/*header yoga class section*/
+._header_yoga_class_wrapper {
+    padding: 26px 0 61px;
+    background: var(--bg2);
+}
+._header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._logo_img {
+    max-width: 82px;
+}
+._header_yoga_class_nav_ul {
+    margin: auto;
+    align-items: center;
+}
+._header_yoga_class_nav_li {
+    margin-right: 46px;
+}
+._header_yoga_class_nav_li:last-child {
+    margin-right: 0;
+}
+#navbarDropdown1 {
+    padding: 0;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+._header_yoga_class_nav_itm {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color2) !important;
+    transition: .2s all ease;
+    position: relative;
+}
+._header_yoga_class_nav_itm::before {
+    position: absolute;
+    content: "";
+    background-color: var(--bg3);
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: .2s all ease;
+}
+._active, ._header_yoga_class_nav_itm:hover {
+    color: var(--bg3) !important;
+}
+._active::before, ._header_yoga_class_nav_itm:hover::before {
+    width: 100%;
+}
+._header_yoga_class_nav_itm svg {
+    margin: -2px 0 0 6px;
+}
+._header_yoga_class_nav_r8_ul {
+    align-items: center;
+}
+._header_yoga_class_nav_r8_li1 {
+    margin-left: 20px;
+}
+._login {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color2) !important;
+    transition: .2s all ease;
+}
+._login:hover {
+    color: var(--bg3) !important;
+}
+._free_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    background: var(--bg3);
+    border-radius: 24px;
+    width: 111px;
+    height: 42px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important;
+}
+._free_btn:hover {
+    background: var(--bg4);
+}
+._header_yoga_class_cont_wrap {
+    margin-top: 54px;
+}
+._header_yoga_class_cont_txt1 {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    max-width: 57%;
+    margin: 0 auto 20px;
+}
+._header_yoga_class_cont_txt2 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color3);
+    margin: 0 auto 40px;
+    max-width: 51%;
+}
+._header_yoga_class_cont_a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._header_yoga_class_cont_a1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+    background: var(--bg5);
+    box-shadow: 0px 12px 41px -2px rgba(33, 197, 142, 0.23);
+    border-radius: 25px;
+    width: 206px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important;
+}
+._header_yoga_class_cont_a1:hover {
+    box-shadow: none;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._header_yoga_class_cont_txt1 {
+        max-width: 67%;
+    }
+    ._header_yoga_class_cont_txt2 {
+        max-width: 59%;
+    } 
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._header_yoga_class_cont_txt1 {
+        max-width: 75%;
+        font-size: 78px;
+    }
+    ._header_yoga_class_cont_txt2 {
+        max-width: 71%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._header_yoga_class_nav_ul {
+        align-items: initial;
+        text-align: center;
+    }
+    ._header_yoga_class_nav_li {
+        margin: 0 0 10px;
+    }
+    ._header_yoga_class_nav_li:last-child {
+        margin: 0 0 10px;
+    }
+    ._header_yoga_class_nav_r8_li1 {
+        margin: 10px 0 0;
+    }
+    ._header_yoga_class_nav_itm_li_itm {
+        text-align: center;
+    }
+    ._header_yoga_class_cont_wrap {
+        margin-top: 34px;
+    }
+    ._header_yoga_class_cont_txt1 {
+        max-width: 100%;
+        font-size: 55px;
+    }
+    ._header_yoga_class_cont_txt2 {
+        max-width: 100%;
+        font-size: 17px;
+    }
+    ._header_yoga_class_nav_itm.special:hover::before {
+        width: 16%;
+        left: 42%;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._header_yoga_class_cont_txt1 {
+        font-size: 44px;
+    }
+    ._header_yoga_class_cont_txt2 {
+        font-size: 15px;
+    }
+    ._header_yoga_class_cont_a1 {
+        width: 180px;
+        font-size: 15px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._header_yoga_class_cont_wrap {
+        margin-top: 20px;
+    }
+    ._header_yoga_class_cont_txt1 {
+        font-size: 33px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._header_yoga_class_cont_txt1 {
+        font-size: 30px;
+    }
+    ._header_yoga_class_cont_a1 {
+        width: 160px;
+        font-size: 13px;
+    }
+    ._header_yoga_class_cont_txt2 {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._header_yoga_class_cont_txt1 {
+        font-size: 26px;
+    }
+}
+/*header yoga class section end*/
+/*services yoga class section*/
+._services_yoga_class_wrapper {
+    margin: 60px 0 110px;
+}
+._services_yoga_class_cont_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bg3);
+    margin-bottom: 18px;
+}
+._services_yoga_class_cont_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color4);
+    margin: 0 auto 46px;
+    max-width: 49%;
+}
+._services_yoga_class_logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+._services_yoga_class_logo_li {
+    margin: 0 92px 0 0;
+}
+._services_yoga_class_logo_li:last-child {
+    margin: 0;
+}
+._services_yoga_class_logo_ic {
+    max-width: 87px;
+    height: 50px;
+    object-fit: contain;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._services_yoga_class_cont_p {
+        max-width: 56%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._services_yoga_class_cont_t {
+        font-size: 33px;
+    }
+    ._services_yoga_class_cont_p {
+        max-width: 66%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._services_yoga_class_wrapper {
+        margin: 50px 0 90px;
+    }
+    ._services_yoga_class_cont_t {
+        font-size: 30px;
+    }
+    ._services_yoga_class_cont_p {
+        max-width: 90%;
+    }
+    ._services_yoga_class_logo_li {
+        margin: 0 23px 0;
+    }
+    ._services_yoga_class_logo_li:last-child {
+        margin: 0 23px 0;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._services_yoga_class_wrapper {
+        margin: 50px 0 70px;
+    }
+    ._services_yoga_class_cont_t {
+        font-size: 27px;
+    }
+    ._services_yoga_class_cont_p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+    ._services_yoga_class_logo_li {
+        margin: 0 10px 0;
+    }
+    ._services_yoga_class_logo_li:last-child {
+        margin: 0 10px 0;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._services_yoga_class_wrapper {
+        margin: 50px 0;
+    }
+    ._services_yoga_class_cont_t {
+        font-size: 25px;
+    }
+    ._services_yoga_class_cont_p {
+        margin: 0 auto 33px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._services_yoga_class_cont_t {
+        font-size: 22px;
+    }
+    ._services_yoga_class_cont_p {
+        font-size: 13px;
+        margin: 0 auto 30px;
+    }
+    ._services_yoga_class_logo_li {
+        margin: 4px 20px 4px;
+    }
+    ._services_yoga_class_logo_li:last-child {
+        margin: 4px 20px 4px;
+    }
+}
+@media only screen and (max-width: 375px) {}
+/*services yoga class section end*/
+/*features yoga class section*/
+._features_yoga_class_wrapper {
+    margin: 0 0 110px;
+    overflow: hidden;
+}
+._features_yoga_class_lft_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    max-width: 62%;
+    margin-bottom: 20px;
+}
+._features_yoga_class_lft_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 63%;
+    margin-bottom: 40px;
+}
+._features_yoga_class_lft_a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+._features_yoga_class_lft_a1 {
+    background: var(--bg5);    box-shadow: 0px 12px 41px -2px rgba(17, 167, 117, 0.23);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 205px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important; 
+}
+._features_yoga_class_lft_a1:hover {
+    box-shadow: none;
+}
+._features_yoga_class_lft_a1 svg {
+    margin: 0 0 0 6px;
+    transition: .2s all ease-in-out;
+}
+._features_yoga_class_lft_a1:hover svg {
+    transform: translate(4px);
+}
+._features_yoga_class_bottom_wrap {
+    margin: 50px 0 0;
+}
+._features_yoga_class_crd {
+    margin: 20px 0;
+}
+._features_yoga_class_crd_img_tag {
+    width: 70px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+._features_yoga_class_crd_cnt_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--bg3);
+    margin-bottom: 14px;
+}
+._features_yoga_class_crd_cnt_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color5);
+    max-width: 58%;
+}
+._features_yoga_class_r8_wrap {
+    max-width: 752px;
+    margin: 0 -125px 0 0;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._features_yoga_class_lft_t {
+        max-width: 73%;
+    }
+    ._features_yoga_class_lft_p {
+        max-width: 75%;
+    }
+    ._features_yoga_class_crd_cnt_p {
+        max-width: 68%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._features_yoga_class_lft_t {
+        max-width: 100%;
+        font-size: 52px;
+    }
+    ._features_yoga_class_lft_p {
+        max-width: 89%;
+    }
+    ._features_yoga_class_crd_cnt_p {
+        max-width: 81%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._features_yoga_class_wrapper {
+        margin: 0 0 60px;
+    }
+    ._features_yoga_class_lft_t {
+        font-size: 45px;
+    }
+    ._features_yoga_class_lft_p {
+        max-width: 100%;
+    }
+    ._features_yoga_class_lft_a {
+        margin-bottom: 40px;
+    }
+    ._features_yoga_class_r8_wrap {
+        max-width: 100%;
+        margin: auto;
+    }
+    ._features_yoga_class_crd_cnt_p {
+        max-width: 100%;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._features_yoga_class_lft_t {
+        font-size: 38px;
+    }
+    ._features_yoga_class_lft_a1 {
+        width: 180px;
+        font-size: 15px;
+    }
+    ._features_yoga_class_crd_cnt_t {
+        font-size: 28px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._features_yoga_class_lft_t {
+        font-size: 34px;
+    }
+    ._features_yoga_class_lft_p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._features_yoga_class_lft_t {
+        font-size: 30px;
+    }
+    ._features_yoga_class_lft_p {
+        font-size: 14px;
+    }
+    ._features_yoga_class_lft_a1 {
+        width: 160px;
+        font-size: 13px;
+    }
+    ._features_yoga_class_crd_cnt_t {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._features_yoga_class_lft_t {
+        font-size: 26px;
+    }
+}
+/*features yoga class section end*/
+/*team yoga class section*/
+._team_yoga_class_wrapper {
+    margin: 60px 0 0;
+    padding: 52px 0;
+    background: var(--bg6);
+}
+._team_yoga_class_lft_img {
+    max-width: 480px;
+    margin: 0 0 0 15px;
+}
+._team_yoga_class_r8_wrap {
+    margin: 0 0 0 40px;
+}
+._team_yoga_class_r8_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color1);
+    max-width: 73%;
+    margin-bottom: 20px;
+}
+._team_yoga_class_r8_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(191, 190, 198, 0.7);
+    max-width: 72%;
+    margin-bottom: 40px;
+}
+._team_yoga_class_r8_a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+._team_yoga_class_r8_a1 {
+    background: var(--bg5);
+    box-shadow: 0px 12px 41px -2px rgba(17, 167, 117, 0.23);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 203px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important; 
+}
+._team_yoga_class_r8_a1:hover {
+    box-shadow: none;
+}
+._team_yoga_class_r8_a1 svg {
+    margin: 0 0 0 6px;
+    transition: .2s all ease-in-out;
+}
+._team_yoga_class_r8_a1:hover svg {
+    transform: translate(4px);
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._team_yoga_class_r8_t {
+        max-width: 86%;
+    }
+    ._team_yoga_class_r8_p {
+        max-width: 84%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._team_yoga_class_lft_img {
+        margin: 0;
+    }
+    ._team_yoga_class_r8_t {
+        max-width: 100%;
+        font-size: 49px;
+    }
+    ._team_yoga_class_r8_p {
+        max-width: 100%;
+    }
+    ._team_yoga_class_r8_wrap {
+        margin: 0 0 0 24px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._team_yoga_class_r8_wrap {
+        margin: 0;
+    }
+    ._team_yoga_class_lft_img {
+        margin: 0 0 40px;
+        max-width: 100%;
+    }
+    ._team_yoga_class_r8_t {
+        font-size: 45px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._team_yoga_class_r8_t {
+        font-size: 37px;
+    }
+    ._team_yoga_class_r8_a1 {
+        width: 180px;
+        font-size: 15px;
+    }
+    ._team_yoga_class_r8_p {
+        font-size: 15px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._team_yoga_class_r8_t {
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._team_yoga_class_r8_t {
+        font-size: 29px;
+    }
+    ._team_yoga_class_r8_p {
+        font-size: 14px;
+    }
+    ._team_yoga_class_r8_a1 {
+        width: 160px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._team_yoga_class_r8_t {
+        font-size: 22px;
+    }
+}
+/*team yoga class section end*/
+/*pricing yoga class section*/
+._pricing_yoga_class_wrapper {
+    margin: 110px 0 10px;
+}
+._pricing_yoga_class_cont_wrap {
+    position: relative;
+    margin: 0 0 80px;
+}
+._pricing_yoga_class_cont_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    max-width: 48%;
+    margin: 0 auto 24px;
+}
+._pricing_yoga_class_cont_sys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._pricing_yoga_class_cont_sys1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 26px 0 0;
+}
+._pricing_yoga_class_cont_sys1_toggle {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 40px;
+}
+._pricing_yoga_class_cont_sys1_toggle_inpt { 
+    opacity: 0;
+}
+._pricing_yoga_class_cont_sys1_toggle_inpt:checked ._pricing_yoga_class_cont_sys1_toggle_inpt_toggle:before{
+    background-color: red;
+}
+._pricing_yoga_class_cont_sys1_toggle_inpt_toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg3);
+    border-radius: 30px;    
+    transition: .2s all ease;
+}
+._pricing_yoga_class_cont_sys1_toggle_inpt_toggle:before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    right: 4px;
+    top: 4px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    transition: .2s all ease;
+}
+._pricing_yoga_class_cont_sys1_toggle_inpt_toggle svg {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+._pricing_yoga_class_cont_sys1_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bg6);
+    margin: 0 26px 0 0;
+}
+._pricing_yoga_class_cont_sys2_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bg6);
+}
+._pricing_yoga_class_cont_img {
+    position: absolute;
+    bottom: -31%;
+    right: 31%;
+}
+._pricing_yoga_class_box_wraper {
+    position: relative;
+}
+._pricing_yoga_class_box_wraper::before {
+    position: absolute;
+    content: "";
+    top: 286px;
+    left: 250px;
+    width: 569px;
+    border: 0.2px solid var(--bg5);
+    transform: rotate(90deg);
+}
+._pricing_yoga_class_box_wraper::after {
+    position: absolute;
+    content: "";
+    bottom: 40px;
+    left: 0;
+    width: 1076px;
+    border: 0.2px solid var(--bg5);
+}
+._pricing_yoga_class_box_wrap {
+    background: var(--color1);
+    border: 1.4px solid var(--bg5);
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 42px 146px 75px 34px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+._pricing_yoga_class_box_1_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin-bottom: 18px;
+}
+._pricing_yoga_class_box_1_t1 {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--bg6);
+    margin-bottom: 6px;
+}
+._pricing_yoga_class_box_p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(114, 128, 144, 0.5);
+    margin: 0 0 46px;
+}
+._pricing_yoga_class_box_1_a, ._pricing_yoga_class_box_2_a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._pricing_yoga_class_box_1_a {
+    margin: 0 0 40px;
+}
+._pricing_yoga_class_box_2_a {
+    margin: 0 0 26px;
+}
+._pricing_yoga_class_box_1_a1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+    border: 1px solid var(--bg5);
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 187px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--bg5);
+}
+._pricing_yoga_class_box_1_a1:hover {
+    border-color: transparent;
+    background: var(--bg5);
+    color: var(--color1);
+    box-shadow: 0px 12px 41px -2px rgba(33, 197, 142, 0.23);
+}
+._pricing_yoga_class_box_1_feat_box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+._pricing_yoga_class_box_1_feat_box svg {
+    margin: 0 11px 0 0;
+}
+._pricing_yoga_class_box_1_feat_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--color3);
+}
+._pricing_yoga_class_box_1::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/pricing-base.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 541px;
+    height: 16px;
+    top: -1px;
+    left: 0;
+    border-radius: 12px 0px 0px 0px;
+}
+._pricing_yoga_class_box_2::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/pricing-after-base.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 541px;
+    height: 16px;
+    top: -1px;
+    right: 0;
+    border-radius: 0px 12px 0px 0px;
+}
+._pricing_yoga_class_box_bottom_wrap {
+    margin: -46px 0 0;
+}
+._pricing_yoga_class_box_bottom_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._pricing_yoga_class_box_bottom_li {
+    margin: 0 33px 0 0;
+}
+._pricing_yoga_class_box_bottom_li:last-child {
+    margin: 0;
+}
+._pricing_yoga_class_box_bottom_li svg {
+    margin: 0 12px 0 0;
+}
+._pricing_yoga_class_box_1_feat_p._pricing_cont {
+    max-width: 59%;
+}
+/* responsive css *
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._pricing_yoga_class_cont_t {
+        max-width: 57%;
+    }
+    ._pricing_yoga_class_box_wraper::after {
+        width: 926px;
+    }
+    ._pricing_yoga_class_box_2::before {
+        width: 467px;
+    }
+    ._pricing_yoga_class_box_wraper::before {
+        left: 175px;
+    }
+    ._pricing_yoga_class_box_wrap {
+        padding: 42px 66px 75px 34px;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._pricing_yoga_class_cont_t {
+        max-width: 67%;
+    }
+    ._pricing_yoga_class_cont_img {
+        right: 26%;
+    }
+    ._pricing_yoga_class_box_wraper::before {
+        left: 138px;
+    }
+    ._pricing_yoga_class_box_2::before {
+        width: 433px;
+    }
+    ._pricing_yoga_class_box_wraper::after {
+        width: 856px;
+    }
+    ._pricing_yoga_class_box_wrap {
+        padding: 42px 34px 75px 34px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._pricing_yoga_class_wrapper {
+        margin: 70px 0 0;
+    }
+    ._pricing_yoga_class_cont_t {
+        max-width: 100%;
+        font-size: 45px;
+    }
+    ._pricing_yoga_class_cont_img {
+        right: 17%;
+    }
+    ._pricing_yoga_class_box_wraper::before, ._pricing_yoga_class_box_wraper::after {
+        display: none;
+    }
+    ._pricing_yoga_class_box_wrap {
+        border: 0;
+        padding: 0;
+    } 
+    ._pricing_yoga_class_box_bottom_wrap {
+        display: none;
+    }
+    ._pricing_yoga_class_box_1, ._pricing_yoga_class_box_2 {
+        border: 1.4px solid var(--bg5);
+        max-width: 335px;
+        padding: 30px 10px 10px;
+        border-radius: 12px;
+    }
+    ._pricing_yoga_class_box_1::before, ._pricing_yoga_class_box_2::before {
+        width: 335px;
+        border-radius: 12px 12px 0px 0px;
+    }
+    ._pricing_yoga_class_box_1 {
+        padding-bottom: 96px;
+    }
+    ._pricing_yoga_class_box_1_feat_p._pricing_cont {
+        max-width: 66%;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._pricing_yoga_class_cont_t {
+        font-size: 37px;
+    }
+    ._pricing_yoga_class_cont_img {
+        right: 6%;
+        bottom: -35%;
+    }
+    ._pricing_yoga_class_box_wrap {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ._pricing_yoga_class_box_1 {
+        padding-bottom: 10px;
+    }
+    ._pricing_yoga_class_box_2 {
+        margin-top: 24px;
+    }
+    ._pricing_yoga_class_box_1::before {
+        width: 334px;
+        left: 91px;
+    }
+    ._pricing_yoga_class_box_2::before {
+        width: 334px;
+        left: 91px;
+        top: 47%;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._pricing_yoga_class_cont_t {
+        font-size: 33px;
+    }
+    ._pricing_yoga_class_cont_sys1_t {
+        font-size: 17px;
+    }
+    ._pricing_yoga_class_box_1, ._pricing_yoga_class_box_2 {
+        max-width: 100%;
+    }
+    ._pricing_yoga_class_box_1::before, ._pricing_yoga_class_box_2::before {
+        left: 82px;
+        width: 70%;
+    }
+    ._pricing_yoga_class_box_1_t1 {
+        font-size: 37px;
+    }
+    ._pricing_yoga_class_cont_img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._pricing_yoga_class_wrapper {
+        margin: 50px 0 0;
+    }
+    ._pricing_yoga_class_cont_wrap {
+        margin: 0 0 60px;
+    }
+    ._pricing_yoga_class_cont_t {
+        font-size: 29px;
+    }
+    ._pricing_yoga_class_box_1::before, ._pricing_yoga_class_box_2::before {
+        width: 98%;
+        left: 5px;
+    }
+    ._pricing_yoga_class_box_1_a1, ._pricing_yoga_class_box_1_a2 {
+        width: 160px;
+        font-size: 13px;
+    }
+    ._pricing_yoga_class_box_1_feat_p {
+        font-size: 14px;
+    }
+    ._pricing_yoga_class_cont_sys1_t {
+        font-size: 14px;
+        margin: 0 16px 0 0;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._pricing_yoga_class_cont_t {
+        font-size: 26px;
+    }
+    ._pricing_yoga_class_box_2::before {
+        top: 46%;
+    }
+    ._pricing_yoga_class_box_1::before, ._pricing_yoga_class_box_2::before {
+        width: 100%;
+        left: 0;
+    }
+}
+/*pricing yoga class section end*/
+/*cta yoga class section*/
+._cta_yoga_class_wrapper {
+    margin: 110px 0 0;
+    position: relative;
+    z-index: 10;
+}
+._cta_yoga_class_wrapper::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cta-lft-ellipse-ic.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 124px;
+    height: 154px;
+    z-index: -1;
+    left: 20px;
+    top: -26px;
+}
+._cta_yoga_class_bg_wrap {
+    background: var(--bg7);
+    border-radius: 18px;
+    padding: 111px 60px 0 80px;
+    position: relative;
+    z-index: 10;
+}
+._cta_yoga_class_bg_wrap::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img//cta-bg-before.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 404px;
+    height: 106px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+._cta_yoga_class_bg_wrap::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img//cta-bg-after.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 662px;
+    height: 123px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+._cta_yoga_class_lft_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+._cta_yoga_class_lft_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 57%;
+    margin-bottom: 36px;
+}
+._cta_yoga_class_lft_btn1 {
+    border: 0;
+    margin: 0 18px 0 0;
+}
+._cta_yoga_class_lft_btn2 {
+    border: 0;
+}
+/* responsive css *
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._cta_yoga_class_lft_t {
+        max-width: 84%;
+    }
+    ._cta_yoga_class_lft_p {
+        max-width: 68%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) {
+    ._cta_yoga_class_lft_t {
+        max-width: 100%;
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+    ._cta_yoga_class_lft_p {
+        margin-bottom: 26px;
+        max-width: 100%;
+    }
+    ._cta_yoga_class_bg_wrap::before {
+        width: 100%;
+        height: 90px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._cta_yoga_class_bg_wrap {
+        padding: 60px 60px 0 60px;
+    }
+    ._cta_yoga_class_lft_t {
+        font-size: 45px;
+    }
+    ._cta_yoga_class_lft_btns {
+        margin-bottom: 52px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._cta_yoga_class_lft_t {
+        font-size: 37px;
+    }
+    ._cta_yoga_class_lft_p {
+        font-size: 15px;
+    }
+    ._cta_yoga_class_bg_wrap::after {
+        width: 450px;
+        height: 90px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._cta_yoga_class_wrapper {
+        margin: 60px 0 0;
+    }
+    ._cta_yoga_class_wrapper::before {
+        display: none;
+    }
+    ._cta_yoga_class_lft_t {
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._cta_yoga_class_lft_t {
+        font-size: 30px;
+    }
+    ._cta_yoga_class_lft_p {
+        font-size: 14px;
+    }
+    ._cta_yoga_class_bg_wrap {
+        padding: 40px 20px 0 20px;
+    }
+    ._cta_yoga_class_bg_wrap::before, ._cta_yoga_class_bg_wrap::after {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._cta_yoga_class_lft_t {
+        font-size: 27px;
+    }
+}
+/*cta yoga class section end*/
+/*testimonial yoga class section*/
+._testimonial_yoga_class_wrapper {
+    margin: 110px 0 0;
+}
+._testimonial_yoga_class_lft_wrap {
+    position: relative;
+    z-index: 10;
+}
+._testimonial_yoga_class_lft_wrap::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/testimonial-lft-bg-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 680px;
+    height: 525px;
+    top: 0;
+    left: -115px;
+    z-index: -1;
+}
+._testimonial_yoga_class_lft_crd {
+    background: var(--color1);
+    box-shadow: 10px 20px 60px rgba(60, 84, 94, 0.05);
+    border-radius: 22px;
+    max-width: 470px;
+    padding: 23px 5px 23px 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: .2s all ease;
+    margin-left: 81px;
+}
+._testimonial_yoga_class_lft_crd_ic {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
+    margin: 0 24px 0 0;
+}
+._testimonial_yoga_class_lft_crd_cont_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color5);
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+._testimonial_yoga_class_lft_crd_cont_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bg6);
+}
+._testimonial_yoga_class_r8_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+._testimonial_yoga_class_r8_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 75%;
+    margin-bottom: 40px;
+}
+._testimonial_yoga_class_r8_a {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+._testimonial_yoga_class_r8_a1 {
+    background: var(--bg5);
+    box-shadow: 0px 12px 41px -2px rgba(17, 167, 117, 0.23);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 185px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important; 
+}
+._testimonial_yoga_class_r8_a1:hover {
+    box-shadow: none;
+}
+._testimonial_yoga_class_r8_a1 svg {
+    margin: 0 0 0 6px;
+    transition: .2s all ease-in-out;
+}
+._testimonial_yoga_class_r8_a1:hover svg {
+    transform: translate(4px);
+}
+.splide__arrows {
+    display: none;
+}
+.splide__pagination {
+    display: none;
+}
+.is-active {
+    margin-left: -50px; 
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._testimonial_yoga_class_r8_p {
+        max-width: 87%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._testimonial_yoga_class_r8_t {
+        font-size: 42px;
+    }
+    ._testimonial_yoga_class_r8_p {
+        max-width: 100%;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._testimonial_yoga_class_wrapper {
+        margin: 90px 0 0;
+    }
+    ._testimonial_yoga_class_r8_t {
+        font-size: 40px;
+    }
+    ._testimonial_yoga_class_r8_a {
+        margin-bottom: 52px;
+    }
+    ._testimonial_yoga_class_lft_wrap::before {
+        width: 520px;
+        height: 400px;
+    }
+    ._testimonial_yoga_class_lft_crd {
+        padding: 23px 0 23px 10px;
+    }
+    ._testimonial_yoga_class_lft_crd_ic {
+        flex: 0 0 90px;
+        margin: 0 15px 0 0;
+    }
+    ._testimonial_yoga_class_lft_crd_cont_p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+    ._testimonial_yoga_class_lft_crd_cont_t {
+        font-size: 15px;
+    }
+    ._testimonial_yoga_class_lft_wrap::before {
+        display: none;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._testimonial_yoga_class_r8_t {
+        font-size: 37px;
+    }
+    ._testimonial_yoga_class_r8_p {
+        font-size: 15px;
+    }
+    ._testimonial_yoga_class_lft_crd {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .is-active {
+        margin-left: -12px;
+    }
+    ._testimonial_yoga_class_r8_a1 {
+        width: 180px;
+        font-size: 15px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._testimonial_yoga_class_wrapper {
+        margin: 70px 0 0;
+    }
+    ._testimonial_yoga_class_r8_t {
+        font-size: 33px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._testimonial_yoga_class_r8_t {
+        font-size: 30px;
+    }
+    ._testimonial_yoga_class_r8_p {
+        font-size: 13px;
+    }
+    ._testimonial_yoga_class_lft_crd {
+        max-width: 290px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._testimonial_yoga_class_lft_crd_cont_t {
+        font-size: 13px;
+    }
+}
+/*testimonial yoga class section end*/
+/*blog yoga class section*/
+._blog_yoga_class_wrapper {
+    margin: 100px 0;
+}
+._blog_yoga_class_cont_t {
+    font-family: HK Grotesk;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--bg3);
+    margin-bottom: 52px;
+}
+._blog_yoga_class_crd_img {
+    max-width: 100%;
+}
+._blog_yoga_class_crd_wrap {
+    margin: 0 0 30px;
+    height: calc(100% - 30px);
+}
+._blog_yoga_class_crd_cnt_date_ic, ._blog_yoga_class_crd_cnt_time_ic {
+    max-width: 14px;
+    margin: 0 8px 0 0;
+}    
+._blog_yoga_class_crd_cnt {
+    padding: 20px 0 0;
+}
+._blog_yoga_class_crd_cnt_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--bg3);
+    margin-bottom: 6px;
+    max-width: 79%;
+}
+._blog_yoga_class_crd_cnt_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color4);
+    margin-bottom: 20px;
+    max-width: 82%;
+    min-height: 108px;
+}
+._blog_yoga_class_crd_cnt_date_time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._blog_yoga_class_crd_cnt_date {
+    display: flex;
+    align-items: center;
+    margin: 0 18px 0 0;
+}
+._blog_yoga_class_crd_cnt_date_p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(114, 128, 144, 0.5);
+}
+._blog_yoga_class_crd_cnt_time {
+    display: flex;
+    align-items: center;
+}
+._blog_yoga_class_crd_cnt_time_p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(114, 128, 144, 0.5);
+}
+._blog_yoga_class_crd01_wrap {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--bg8);
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+}
+._blog_yoga_class_crd01_cont_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--bg3);
+    max-width: 75%;
+    margin-bottom: 23px;
+}
+._blog_yoga_class_crd01_img {
+    display: flex;
+    align-items: center;
+    flex: 0 0 120px;
+    max-width: 100%;
+}
+._blog_yoga_class_crd01_cont_date_time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._blog_yoga_class_crd01_cont_date {
+    display: flex;
+    align-items: center;
+    margin: 0 14px 0 0;
+}
+._blog_yoga_class_crd01_cont_time {
+    display: flex;
+    align-items: center;
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._blog_yoga_class_cont_t {
+        font-size: 50px;
+    }
+    ._blog_yoga_class_crd_cnt_t {
+        max-width: 90%;
+    }
+    ._blog_yoga_class_crd_cnt_p {
+        max-width: 96%;
+    }
+    ._blog_yoga_class_crd01_cont_t {
+        max-width: 90%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._blog_yoga_class_crd_cnt_t {
+        max-width: 100%;
+        font-size: 23px;
+    }
+    ._blog_yoga_class_crd_cnt_p {
+        max-width: 100%;
+        font-size: 13px;
+    }
+    ._blog_yoga_class_crd01_cont_t {
+        max-width: 100%;
+        font-size: 20px;
+    }
+    ._blog_yoga_class_crd01_cont_date_time {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    ._blog_yoga_class_crd01_cont_date {
+        margin: 0 0 14px;
+    }
+    ._blog_yoga_class_crd01_wrap {
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._blog_yoga_class_wrapper {
+        margin: 40px 0 60px;
+    }
+    ._blog_yoga_class_cont_t {
+        font-size: 42px;
+        margin-bottom: 32px;
+    }
+    ._blog_yoga_class_crd_cnt_t {
+        font-size: 21px;
+    }
+    ._blog_yoga_class_crd01_wrap {
+        margin-top: 30px;
+    }
+    ._blog_yoga_class_crd01_cont_t {
+        font-size: 19px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._blog_yoga_class_cont_t {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    ._blog_yoga_class_crd_cnt_p {
+        min-height: 0;
+    }
+    ._blog_yoga_class_crd01_wrap {
+        justify-content: space-between;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._blog_yoga_class_cont_t {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._blog_yoga_class_cont_t {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._blog_yoga_class_crd_cnt_t {
+        font-size: 19px;
+    }
+    ._blog_yoga_class_crd01_cont_t {
+        font-size: 16px;
+    }
+}
+/*blog yoga class section end*/
+/*footer yoga class section*/
+._footer_yoga_class_wrapper {
+    background: var(--bg9);
+    padding: 40px 0 5px;
+}
+._footer_yoga_class_logo_wrap {
+    margin-bottom: 62px;
+}
+._footer_yoga_class_logo {
+    max-width: 82px;
+}
+._footer_yoga_class_menu_wrapper {
+    margin: 0 0 48px;
+}
+._footer_yoga_class_menu_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bg3);
+    margin-bottom: 14px;
+}
+._footer_yoga_class_menu_li {
+    margin-bottom: 7px;
+}
+._footer_yoga_class_menu_li:last-child {
+    margin-bottom: 0;
+}
+._footer_yoga_class_menu_itm {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--color4) !important;
+    display: inline-block;
+    transition: .2s all ease;
+}
+._footer_yoga_class_menu_itm:hover {
+    color: var(--bg5) !important;
+}
+._footer_yoga_class_social_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bg3);
+    margin-bottom: 23px;
+}
+._footer_yoga_class_social_ul {
+    display: flex;
+    align-items: center;
+}
+._footer_yoga_class_social_li {
+    margin-right: 12px;
+}
+._footer_yoga_class_social_li:last-child {
+    margin-right: 0;
+}
+._footer_yoga_class_social_itm {
+    background: var(--bg10);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in;
+}
+._footer_yoga_class_social_itm:hover {
+    background: transparent;
+    border-color: var(--bg5);
+    transform: translateY(-10px);
+}
+._footer_yoga_class_subs_t {
+    font-family: HK Grotesk;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--bg3);
+    margin-bottom: 18px;
+}
+._footer_yoga_class_subs_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color4);
+    max-width: 56%;
+    margin-bottom: 32px;
+}
+._footer_yoga_class_subs_inpt_btn_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+._footer_yoga_class_subs_inpt {
+    background: rgba(233, 238, 248, 0.5);
+    border-radius: 27px;
+    border: 0;
+    width: 245px;
+    height: 50px;
+    color: var(--bg1);
+    padding: 6px 10px 6px 30px;
+    margin: 0 14px 0 0;
+    transition: .2s all ease-in-out;
+}
+._footer_yoga_class_subs_inpt::placeholder {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--color5);
+    transition: .2s all ease-in-out;
+}
+._footer_yoga_class_subs_inpt:focus::placeholder {
+    transform: translateX(215px);
+    transition: .2s all ease-in-out;
+}
+._footer_yoga_class_subs_inpt_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    background: var(--bg5);
+    border: 0;
+    border-radius: 27px;
+    width: 113px;
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color1);
+}
+._footer_yoga_class_subs_inpt_btn:hover {
+    background: #22bc88;
+}
+._footer_yoga_class_bottom_wrapper {
+    border-top: 1px solid var(--bg10);
+    padding: 30px 0;
+}
+._footer_yoga_class_bottom_lft_p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color4);
+}
+._footer_yoga_class_bottom_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+._footer_yoga_class_bottom_menu_li {
+    margin: 0 0 0 20px;
+}
+._footer_yoga_class_bottom_menu_li:first-child {
+    margin: 0;
+}
+._footer_yoga_class_bottom_menu_itm {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: right;
+    color: var(--color4) !important;
+    display: inline-block;
+    transition: .2s all ease;
+    position: relative;
+}
+._footer_yoga_class_bottom_menu_itm:hover {
+    color: var(--bg5) !important;
+}
+._border_r8:before {
+    position: absolute;
+    content: "";
+    background: var(--color4) !important;
+    width: 17px;
+    height: 1px;
+    top: 7px !important;
+    left: 96px !important;
+    transform: rotate(90deg);
+}
+._border_r8_one:before {
+    position: absolute;
+    content: "";
+    background: var(--color4) !important;
+    width: 17px;
+    height: 1px;
+    top: 7px !important;
+    left: 136px !important;
+    transform: rotate(90deg);
+}
+/* responsive css */
+/* Desktop/Laptop */
+@media only screen and (min-width: 1600px) {}
+@media (max-width: 1399px) {
+    ._footer_yoga_class_subs_p {
+        max-width: 65%;
+    }
+}
+/* Desktop/Laptop */
+@media only screen and (max-width: 1199px) { 
+    ._footer_yoga_class_social_li {
+        margin-right: 8px;
+    }
+    ._footer_yoga_class_subs_p {
+        max-width: 78%;
+    }
+    ._footer_yoga_class_subs_inpt {
+        width: 204px;
+        margin: 0 10px 0 0;
+    }
+    ._footer_yoga_class_subs_inpt_btn {
+        width: 82px;
+    }
+}
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._footer_yoga_class_logo_wrap {
+        margin-bottom: 40px;
+    }
+    ._footer_yoga_class_bottom_lft_p {
+        font-size: 13px;
+    }
+    ._footer_yoga_class_bottom_menu_itm {
+        font-size: 13px;
+    }
+    ._border_r8:before {
+        left: 89px !important;
+    }
+    ._border_r8_one:before {
+        left: 127px !important;
+    }
+    ._footer_space {
+        margin-top: 40px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._footer_yoga_class_subs_p {
+        max-width: 100%;
+    }
+    ._footer_yoga_class_logo_wrap {
+        margin-bottom: 28px;
+    }
+    ._footer_yoga_class_bottom_lft_p {
+        margin-bottom: 10px;
+    }
+    ._footer_yoga_class_bottom_menu {
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._footer_space1 {
+        margin-top: 40px;
+    }
+    ._footer_yoga_class_subs_inpt {
+        width: 260px;
+    }
+    ._footer_yoga_class_subs_inpt_btn {
+        width: 90px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._footer_yoga_class_bottom_lft_p {
+        font-size: 12px;
+    }
+    ._footer_yoga_class_bottom_menu_itm {
+        font-size: 11px;
+    }
+    ._border_r8_one:before {
+        top: 5px !important;
+        left: 107px !important;
+    }
+    ._border_r8:before {
+        left: 76px !important;
+        top: 5px !important;
+    }
+    ._footer_yoga_class_menu_itm {
+        font-size: 14px;
+    }
+    ._footer_yoga_class_subs_inpt_btn_wrap {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    ._footer_yoga_class_subs_inpt {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+    ._footer_yoga_class_subs_inpt_btn {
+        width: 110px;
+    }
+    ._footer_yoga_class_subs_inpt:focus::placeholder {
+        transform: translateX(360px);
+    }
+}
+@media only screen and (max-width: 375px) {
+    ._footer_yoga_class_bottom_menu_li:first-child {
+        margin: 0 20px 0 0;
+    }
+    ._footer_yoga_class_bottom_menu_li {
+        margin: 0;
+    }
+}
+/*footer yoga class section end*/
+/*------------------
+    Variable 
+------------------*/
+:root {
+    --color1: #fff;
+    --color2: #516D9E;
+    --color3: #516074;
+    --color4: #728090;
+    --color5: #919AA4;
+    --bg1:#000;
+    --bg2: #F1FBFF;
+    --bg3: #072E75;
+    --bg4: #0c275a;
+    --bg5: #21C58E;
+    --bg6: #292742;
+    --bg7: #E6F8F5;
+    --bg8: #F3F7FF;
+    --bg9: #F8FAFF;
+    --bg10: #E9EEF8;
+}
